@@ -1,0 +1,108 @@
+@use '../util/' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  //padding: 0 5px;
+  list-style: none;
+  font-size: rem(18);
+  color: var(--grayish-blue);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: rem(18);
+  font-family: "Rubik", sans-serif;
+  // min-height: 120vh;
+  margin-bottom: 200px;
+  /*how much to scroll*/
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+header,
+main {
+  margin: rem(30);
+  color: var(--very-dark-blue);
+}
+
+main {
+  @apply flex flex-col items-center;
+
+  button {
+    font-weight: bold;
+  }
+}
+
+footer {
+  margin: 0;
+}
+  
+img {
+  max-width: 100%;
+
+}
+
+//Typography
+//h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+  color: var(--very-dark-blue);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: rem(40);
+  color: var(--very-dark-blue);
+}
+
+
+h2 {
+  @apply font-bold;
+  font-size: rem(28);
+  color: var(--very-dark-blue);
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: rem(24);
+  text-align: center;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: rem(20);
+}
+
+p {
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: var(--grayish-blue);
+}
+
+hr {
+  text-align: center;
+  margin: rem(23);
+  border: 1px solid var(--grayish-blue);
+  width: max;
+}

@@ -1,0 +1,113 @@
+@use '../util/' as *;
+
+.main__part3 {
+  @apply mt-10 mb-28 flex flex-col items-center;
+  
+  .img2 {
+    max-width: 50%;
+  }
+
+  .mp2 {
+    max-width: 300px;
+  }
+  
+  .manager {
+    margin-top: rem(140);
+    max-width: rem(456);
+    min-width: rem(100);
+  }
+
+  .blue {
+    @apply cursor-pointer mt-10 ml-2;
+    padding: rem(10);
+    border-radius: rem(5);
+    color: var(--white);
+    background-color: var(--Soft-blue);
+    border: none;
+  }
+  
+  .blue:hover {
+    transform: scale(1.1);
+    border: 2px solid var(--Soft-blue);
+    background-color: var(--white);
+    color: var(--Soft-blue);
+  }
+  
+  .soft-blue2 {
+    background-color: var(--Soft-blue);
+    border: .125rem solid var(--Soft-blue);
+    border-radius: 6.25rem;
+    bottom: 30.813rem;
+    display: flex;
+    height: 15rem;
+    left: -13.312rem;
+    margin-bottom: -11.25rem;
+    position: relative;
+    width: 38.4375rem;
+    z-index: -1;
+  }
+  
+  @media (min-width: 39.125em) {
+    .soft-blue2 {
+      background-color: var(--Soft-blue);
+      border: .125rem solid var(--Soft-blue);
+      border-radius: 6.25rem;
+      bottom: calc(-41.187rem + 1vw);
+      display: flex;
+      height: calc(18rem + 4vw);
+      left: calc(-45.312rem + 47vw);
+      margin-bottom: -11.25rem;
+      position: absolute;
+      width: 59.438rem;
+      z-index: -1;
+    }
+
+    .img2 {
+      max-width: 100%;
+    }
+  }
+
+}
+
+@media (min-width: 63em) {
+  .main__part3 {
+    @apply flex-row;
+    width: auto;
+  
+
+  .manager {
+    margin-top: 0.25rem;
+    margin-left: rem(20);
+    position: relative;
+    left: calc(rem(-200) + 20vw);
+    top: rem(23);
+  }
+
+  .mh2 {
+    text-align: start;
+    justify-content: start;
+  }
+
+  .mp2 {
+    text-align: start;
+  }
+}
+
+  .main__part3 .soft-blue2 {
+    background-color: var(--Soft-blue);
+    border: .125rem solid var(--Soft-blue);
+    border-radius: 32.25rem;
+    bottom: -28.8rem;
+    display: flex;
+    height: 21rem;
+    left: calc(-59.312rem + 30vw);
+    margin-bottom: -11.25rem;
+    position: absolute;
+    width: 73.438rem;
+    z-index: -1;
+  }
+}
+
+.hide {
+  display: none;
+}

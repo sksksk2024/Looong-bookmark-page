@@ -1,0 +1,52 @@
+@use '../util/' as *;
+
+.main__part2 {
+  @apply mb-5;
+
+  .hr2 {
+    display: none;
+  }
+
+  hr {
+    position: relative;
+    bottom: rem(3);
+    z-index: -1;
+  }
+
+  p {
+    max-width: rem(600)
+  }
+
+  h3 {
+    @apply cursor-pointer;
+    margin-top: rem(-23);
+    margin-bottom: rem(-23);
+    padding: rem(18);
+    text-align: center;
+  }
+  
+  h3:hover {
+    margin-left: rem(105);
+    position: relative;
+    right: rem(50);
+    color: var(--Soft-red);
+  }
+  
+  .focused {
+    border-bottom: rem(7) solid var(--Soft-red);
+ }
+
+  @media (min-width: 63em) {
+    .hr1 {
+      display: none;
+    }
+
+    .b2 {
+      @apply flex flex-row mt-20;
+    }
+
+    .hr2 {
+      @apply flex;
+    }
+  }
+}

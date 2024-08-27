@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./app/images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./dist/style.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+</head>
+<body>
+  <!-- Header Section -->
+   <header class="header">
+    <img class="header__logo" src="./app/images/logo-bookmark.svg" alt="">
+
+    <div class="header__burger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+    
+    <div class="header__menu hidden">
+      <img class="close" src="./app/images/icon-close.svg" alt="">
+      <span class="header__menu--options">Features</span>
+      <span class="header__menu--options">Pricing</span>
+      <span class="header__menu--options">Contact</span>
+      <button class="header__menu--options">Login</button>
+    </div>
+   </header>
+
+   <main class="main">
+
+    <section class="main__part1">
+      <img class="img1" src="./app/images/illustration-hero.svg" alt="" class="img1">
+      
+      <div class="manager">
+        <h1>A Simple Bookmark Manager</h1>
+        
+        <p>A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.</p>
+          
+          <div class="box">
+            <button class="blue">Get it on Chrome</button>
+            <button class="white">Get it on Firefox</button>
+          </div>
+        </div>
+        <span class="soft-blue"></span>
+    </section>
+
+    <section class="main__part2">
+      <h2>Features</h2>
+      <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+      Your bookmarks sync between your devices so you can access them on the go.</p>
+      <div class="b2">
+        <hr class="hr1">
+        <h3>
+          Simple Bookmarking
+        </h3>
+        <hr class="hr1">
+        <h3>
+          Speedy Searching
+        </h3>
+        <hr class="hr1">
+        <h3>
+          Easy Sharing
+        </h3>
+        <hr class="hr1">
+      </div>
+      <hr class="hr2">
+      
+    </section>
+
+    <section class="main__part3">
+      <img src="./app/images/illustration-features-tab-1.svg" alt="" class="img2">
+      
+      <div class="manager">
+        <h2 class="mh2">Bookmark in one click</h2>
+        
+        <p class="mp2">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+          gives you complete control over how you manage your favourite sites.</p>
+          
+          <button class="blue" hidden>More Info</button>
+        </div>
+        <span class="soft-blue2"></span>
+    </section>
+
+    <section class="main__part3 hide">
+      <img src="./app/images/illustration-features-tab-2.svg" alt="" class="img2">
+      
+      <div class="manager">
+        <h2>
+          Intelligent search
+        </h2>
+        
+        <p>
+          Our powerful search feature will help you find saved sites in no time at all. 
+          No need to trawl through all of your bookmarks.
+        </p>
+        
+        <button class="blue" hidden>More Info</button>
+        
+      </div>
+      <span class="soft-blue2 overflow-check"></span>
+    </section>
+
+    <section class="main__part3 hide">
+      <div class="together3">
+        <img src="./app/images/illustration-features-tab-3.svg" alt="" class="img2">
+      </div>
+      
+      <div class="manager">
+        <h2>
+          Share your bookmarks
+        </h2>
+        
+        <p>
+          Easily share your bookmarks and collections with others. Create a shareable 
+          link that you can send at the click of a button.
+        </p>
+        
+        <button class="blue" hidden>More Info</button>
+        
+      </div>
+      <span class="soft-blue2"></span>
+    </section>
+    
+    
+    <section class="main__part4">
+      <div class="main__part4--box4">
+        <h2>Download the extension</h2>
+        <p>
+          We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+          got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+      <div class="cards">
+
+        <div class="main__part4--card first">
+          <img class="img4" src="./app/images/logo-chrome.svg" alt="">
+          <h2>Add to Chrome</h2>
+          <p>Minimum version 62</p>
+          <button class="blue">
+            Add & Install Extension
+          </button>
+        </div>
+  
+        <div class="main__part4--card second">
+          <img class="img4" src="./app/images/logo-firefox.svg" alt="">
+          <h2>Add to Firefox</h2>
+          <p>Minimum version 55</p>
+          <button class="blue">
+            Add & Install Extension
+          </button>
+        </div>
+  
+        <div class="main__part4--card third">
+          <img class="img4" src="./app/images/logo-opera.svg" alt="">
+          <h2>Add to Opera</h2>
+          <p>Minimum version 46</p>
+          <button class="blue">
+            Add & Install Extension
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__part5">
+      <h2>Frequently Asked Questions</h2>
+      <p>
+        Here are some of our FAQs. If you have any other questions you’d like 
+        answered please feel free to email us.
+      </p>
+      <hr>
+      <div class="container" id="header1">
+        <!-- Question 1 -->
+        <h3 class="question">What is Bookmark?</h3>
+
+        <div class="arrow" id="open1">
+          <img class="img5" src="./app/images/icon-arrow.svg" alt="">
+        </div>
+
+        <div class="arrow hide" id="close1">
+          <img class="img5" src="./app/images/icon-arrow.svg" alt="">
+        </div>
+      </div>
+
+      <div class="container2 hide" id="content1">
+        <!-- Answer 1 -->
+        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+      </div>
+      
+      <hr>
+
+      <div class="container" id="header2">
+        <!-- Question 2 -->
+        <h3 class="question">How can I request a new browser?</h3>
+
+        <div class="arrow" id="open2">
+          <img class="img5" src="./app/images/icon-arrow.svg" alt="">
+        </div>
+
+        <div class="arrow hide" id="close2">
+          <img class="img5" src="./app/images/icon-arrow.svg" alt="">
+        </div>
+      </div>
+
+      <div class="container2 hide" id="content2">
+        <!-- Answer 2 -->
+        <p class="answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+          Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+      </div>
+        
+      <hr>
+
+      <div class="container" id="header3">
+        <!-- Question 3 -->
+        <h3 class="question">Is there a mobile app?</h3>
+
+        <div class="arrow" id="open3">
+          <img class="img5" src="./app/images/icon-arrow.svg" alt="">
+        </div>
+
+        <div class="arrow hide" id="close3">
+          <img class="img5" src="./app/images/icon-arrow.svg" alt="">
+        </div>
+      </div>
+
+      <div class="container2 hide" id="content3">
+        <!-- Answer 3 -->
+        <p class="answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+          sollicitudin ex et ultricies bibendum.</p>
+      </div>
+      
+      <hr>
+
+      <div class="container" id="header4">
+        <!-- Question 4 -->
+        <h3 class="question">What about other Chromium browsers?</h3>
+
+        <div class="arrow" id="open4">
+          <img class="img5" src="./app/images/icon-arrow.svg" alt="">
+        </div>
+
+        <div class="arrow hide" id="close4">
+          <img class="img5" src="./app/images/icon-arrow.svg" alt="">
+        </div>
+      </div>
+
+      <div class="container2 hide" id="content4">
+        <!-- Answer 4 -->
+        <p class="answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+          vitae neque eget nisl gravida pellentesque non ut velit.</p>
+      </div>
+      <hr>
+    
+      <button class="blue">More Info</button>
+      
+    </section>
+   </main>
+  
+  <footer class="footer">
+
+    <div class="footer__part1">
+      <div class="wrapper1">
+        <span class="footer__joined">35,000+ already joined</span>
+        
+        <h2 class="footer__h2">
+          Stay up-to-date with what we’re doing
+        </h2>
+      
+        <div class="together-1">
+          <div class="input-container">
+            <input id="email" class="footer__input" type="email" placeholder="Enter your email address" required>
+
+            <span id="email-error" class="error-message hide">Valid email required</span>
+          </div>
+          
+          <button id="submit-button" class="footer__button">Contact Us</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__part2">
+      <div class="wrapper2">
+        <div class="together">
+          <img class="footer__logo" src="./app/images/logo-bookmark-footer.svg" alt="">
+      
+          <div class="footer__options">
+            <a href="">Features</a>
+            <a href="">Pricing</a>
+            <a href="">Contact</a>
+          </div>
+        </div>
+    
+        <div class="footer__social">
+          <div class="change1">
+            <img class="footer__facebook" src="./app/images/icon-facebook.svg" alt="">
+          </div>
+
+          <div class="change2">
+            <img class="footer__twitter" src="./app/images/icon-twitter.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </footer>
+
+  <script src="./app/js/script.js"></script>
+</body>
+</html>
